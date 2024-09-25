@@ -3,47 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <title>Đăng nhập | UFM</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
 <link rel="shortcut icon"
 	href="https://nhaphoc.ufm.edu.vn/assets/public/image/Logo_footerUFM.png">
 </head>
 <body>
-	<table border="1" width="100%">
+	<table>
 		<tr>
-			<td rowspan="8" width="67%"><img alt="UFM"
+			<td rowspan="9" width="67%"><img alt="UFM"
 				src="https://uis.ufm.edu.vn/static/images/Carousel/UFM_login.jpg"
 				width="100%" height="900px"></td>
-			<td valign="top" align="center"><img id="imgLogo" alt="Logo"
-				src="https://nhaphoc.ufm.edu.vn/assets/public/image/Logo_footerUFM.png"
-				width="20%" height="20%" />
-			</p></td>
+				
+			<td class = "logo">
+			
+				<img id="imgLogo" alt="Logo"
+				src="https://nhaphoc.ufm.edu.vn/assets/public/image/Logo_footerUFM.png"/>
+			
+			</td>
 		</tr>
 		<tr>
-			<td>TRƯỜNG ĐẠI HỌC TÀI CHÍNH - MARKETING</td>
+			<td class = "ufm">TRƯỜNG ĐẠI HỌC TÀI CHÍNH - MARKETING</td>
 		</tr>
 		<tr>
-			<td>ĐĂNG NHẬP</td>
+			<td class = "lblLogin">ĐĂNG NHẬP</td>
 		</tr>
 		<tr>
-			<td>Cổng thông tin đào tạo</td>
+			<td class = "portal">Cổng thông tin đào tạo</td>
 		</tr>
 		<tr>
 			<td><input id="idUserName" type="text" name="username"
-				placeholder="Tên đăng nhập" /></td>
+				placeholder="Tên đăng nhập" class="txtUsername"/></td>
 		</tr>
 		<tr>
 			<td><input id="idPassword" type="password" name="password"
-				placeholder="Mật khẩu" /></td>
+				placeholder="Mật khẩu" class = "pwrPassword"/></td>
 		</tr>
 		<tr>
-			<td><input id="idCheckForParent" type="checkbox"
-				/ name="checkforparent"> <label for="idCheckForParent">Phụ
+			<td><input class = "lblForParent" id="idCheckForParent" type="checkbox"
+				/ name="checkforparent"> <label for="idCheckForParent" class = "lblForParent">Phụ
 					huynh sinh viên đăng nhập</label></td>
 		</tr>
 		<tr>
 			<td>
-				a
+				<input class = "btnLogin" id = "idLogin" type = "button" value ="Đăng nhập" name = "buttonlogin" >
 			</td>
 		</tr>
+		<tr>
+			<td>
+				<a class = "lblForgotPassword" href="https://uis.ufm.edu.vn/authentication/password-recovery">Sinh viên quên mật khẩu?</a>
+			</td>
+		</tr>	
 	</table>
 
 

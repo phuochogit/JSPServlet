@@ -1,0 +1,44 @@
+@charset "UTF-8";
+a {
+	color: red;
+	font-size: 20px;
+}
+#indam{
+	font-weight: bold;
+}
+.innghieng {
+	font-style: italic;
+}
+
+h1 {
+	color: black;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h1 {
+	color: black;
+	font-weight: bold;
+}
+
+h1 {
+	color: black;
+}
+
+h2 {
+	color: black;
+}
+
+h3 {
+	color: black;
+}
+
+h1,h2,h3 {
+	color: black;
+}
+
+h1.maudo{
+	color:red;
+}
