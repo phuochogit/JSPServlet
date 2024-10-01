@@ -2,14 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Đăng nhập | UFM</title>
+<title>Login | UFM</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
 <link rel="shortcut icon"
 	href="https://nhaphoc.ufm.edu.vn/assets/public/image/Logo_footerUFM.png">
+
 </head>
 <body>
 	<table border="1" width="100%">
 		<tr>
-			<td rowspan="8" width="67%"><img alt="UFM"
+			<td rowspan="9" width="67%"><img alt="UFM"
 				src="https://uis.ufm.edu.vn/static/images/Carousel/UFM_login.jpg"
 				width="100%" height="900px"></td>
 			<td valign="top" align="center"><img id="imgLogo" alt="Logo"
@@ -18,33 +20,68 @@
 			</p></td>
 		</tr>
 		<tr>
-			<td>TRƯỜNG ĐẠI HỌC TÀI CHÍNH - MARKETING</td>
+			<td class = "ufm">UNIVERSITY OF FINANCE - MARKETING</td>
 		</tr>
 		<tr>
-			<td>ĐĂNG NHẬP</td>
+			<td class = "lblLogin">LOGIN</td>
 		</tr>
 		<tr>
-			<td>Cổng thông tin đào tạo</td>
+			<td class = "portal">Student portal</td>
 		</tr>
 		<tr>
-			<td><input id="idUserName" type="text" name="username"
-				placeholder="Tên đăng nhập" /></td>
+			<td><input class = "txtUsername" id="idUserName" type="text" name="username"
+				placeholder="User" /></td>
 		</tr>
 		<tr>
-			<td><input id="idPassword" type="password" name="password"
-				placeholder="Mật khẩu" /></td>
+			<td><input class = "pwrPassword" id="idPassword" type="password" name="password"
+				placeholder="Password" /></td>
 		</tr>
 		<tr>
 			<td><input id="idCheckForParent" type="checkbox"
-				/ name="checkforparent"> <label for="idCheckForParent">Phụ
-					huynh sinh viên đăng nhập</label></td>
+				/ name="checkforparent"> <label class = "lblForParent" for="idCheckForParent">Parent login</label></td>
 		</tr>
+		
+		<tr>
+			<td><input class = "btnLogin" id="idLogin" type="button" value = "Login"
+				/ name="login" onclick="my_submit()"> </td>
+		</tr>
+		
 		<tr>
 			<td>
-				a
+				<a class = "lblForgotPassword" href="https://uis.ufm.edu.vn/authentication/password-recovery">Forgot password</a>
 			</td>
 		</tr>
 	</table>
+	
+	<script type="text/javascript">
+		function my_submit() {
+			var exampleInputEmail = document.getElementById("idUserName");
+			var exampleInputPassword = document.getElementById("idPassword");
+
+			var email = exampleInputEmail.value;
+			var password = exampleInputPassword.value;
+
+			if (email.length == 0){
+				alert("Enter student id");
+				return false;
+			}
+			if (password.length == 0){
+				alert("Enter your password");
+				return false;
+			}
+			if (password.length < 8){
+				alert("Password must at least 8 characters")
+				return false;
+			}
+
+			var loginSuccess = document.getElementById("idLogin");
+			loginSuccess.onclick(window.location.href = 'student.html');
+			d
+			
+			
+		}
+
+	</script>
 
 
 </body>

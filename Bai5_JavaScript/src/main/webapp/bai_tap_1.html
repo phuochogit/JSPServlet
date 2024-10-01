@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script language="JavaScript">
+	function changeInputName() {
+		var name = document.getElementById("idInputName");
+		var output = document.getElementById("idOutputName");
+
+		output.innerHTML = "Hi, " + name.value;
+	}
+</script>
+
+</head>
+<body>
+
+What's your name: <input type="text" id = "idInputName" onkeypress="changeInputName()" onchange="changeInputName()"/>
+ 
+ <p id = "idOutputName">Hi, </p>
+
+
+</body>
+</html>

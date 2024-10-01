@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div id = "my_div" onmouseover="changeColorGreen()" onmouseleave="changeColorYellow()" style="background-color: yellow;">
+
+		Bai 1
+
+		<hr>
+
+		Bai 2
+
+		<hr>
+
+		Bai 3
+
+	</div>
+
+	<script type="text/javascript">
+
+	function changeColorGreen(){
+			var my_div = document.getElementById("my_div");
+			my_div.style = "background-color: green;"
+		}
+
+	function changeColorYellow(){
+		var my_div = document.getElementById("my_div");
+		my_div.style = "background-color: yellow;"
+	}
+	
+	</script>
+
+</body>
+</html>
