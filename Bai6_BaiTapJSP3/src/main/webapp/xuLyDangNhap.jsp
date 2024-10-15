@@ -12,6 +12,8 @@
 	String username = request.getParameter("username");
 
 	String password = request.getParameter("password");
+	
+	
 	%>
 
 	<%
@@ -21,7 +23,7 @@
 	<%
 	} else {
 	%>
-	<h1>Khong tim thay tai khoan</h1>
+	<h1>Khong tim thay tai khoan</h1> getElement
 	<%
 	}
 	%>
